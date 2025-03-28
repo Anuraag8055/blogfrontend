@@ -11,7 +11,7 @@ import useFetch from "hooks/useFetch";
 
 export default function App() {
  
-  const {loading,error,data} = useFetch('http://localhost:1337/api/blogs?populate=*');
+  const {loading,error,data} = useFetch('https://strapibackend-41l3.onrender.com/api/blogs?populate=*');
   if(loading) return <p>Loading...</p>
   if(error) return console.log(error)
 

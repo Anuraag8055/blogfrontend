@@ -103,7 +103,7 @@ export default ({posts}
               <PostContainer key={index} featured={post.featured}>
                 <Link to ={`/blog/${post.id}`}>
                   <Post className="group" as="a" href={post.url}>
-                  <Image imageSrc={`http://localhost:1337${post.coverImage.url}`} />
+                  <Image imageSrc={`https://strapibackend-41l3.onrender.com${post.coverImage.url}`} />
                   <Info>
                     <Category>{post.category}</Category>
                     <CreationDate>{post.publishedDate}</CreationDate>
